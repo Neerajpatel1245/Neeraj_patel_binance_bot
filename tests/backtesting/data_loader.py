@@ -24,8 +24,8 @@ def load_and_validate_data(filename=CSV_FILE_PATH):
     """
     print(f"Attempting to load data from '{filename}'...")
 
-    # 1. Initialize `required_columns`
-    # This list is initialized with the actual column names from your CSV
+    # 1. Initialized `required_columns`
+    # This list is initialized with the actual column names from CSV
     # that are essential for any meaningful trade analysis or reporting.
     required_columns = [
         "Timestamp IST",
