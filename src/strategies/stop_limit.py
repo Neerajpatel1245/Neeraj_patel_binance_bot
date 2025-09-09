@@ -1,5 +1,3 @@
-# src/strategies/stop_limit.py
-
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
 import structlog

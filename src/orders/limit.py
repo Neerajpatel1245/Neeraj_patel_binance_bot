@@ -1,5 +1,3 @@
-# src/orders/limit.py
-
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
 import structlog
@@ -37,7 +35,7 @@ def place_limit_order(
             symbol=symbol,
             side=side.upper(),
             type=Client.ORDER_TYPE_LIMIT,
-            timeInForce=Client.TIME_IN_FORCE_GTC,  # Good 'Til Canceled
+            timeInForce=Client.TIME_IN_FORCE_GTC,
             quantity=quantity,
             price=price
         )

@@ -1,5 +1,3 @@
-# src/strategies/oco.py
-
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
 import structlog
@@ -73,7 +71,7 @@ def place_simulated_oco_order(
         return None
 
     try:
-        # Place Stop-Loss order
+        # Stop-Loss order
         local_log.info("Placing STOP_MARKET order.")
         sl_order = client.futures_create_order(
             symbol=symbol,

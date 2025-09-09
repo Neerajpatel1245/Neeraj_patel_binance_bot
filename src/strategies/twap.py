@@ -1,5 +1,3 @@
-# src/strategies/twap.py
-
 import time
 import random
 from binance.client import Client
@@ -76,9 +74,7 @@ def execute_twap_strategy(
         # Ensure the quantity is valid before placing the order
         # NOTE: A full implementation would use the OrderValidator here.
         # For simplicity, we'll just format it to a reasonable precision.
-        # This might fail if the precision rules are very strict.
         order_quantity_str = f"{order_quantity:.3f}"
-        # A common precision, but not guaranteed
 
         local_log.info(
             "Placing TWAP child order.",

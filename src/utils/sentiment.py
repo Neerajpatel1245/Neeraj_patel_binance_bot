@@ -1,5 +1,3 @@
-# src/utils/sentiment.py
-
 import requests
 import structlog
 from typing import Optional, Dict, Any

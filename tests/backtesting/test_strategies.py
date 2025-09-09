@@ -4,12 +4,6 @@ import pandas as pd
 
 
 # --- DYNAMIC PATH CORRECTION ---
-# This block makes the script runnable from the project root directory
-# by adding the 'src' folder to the Python import path.
-# 1. Get the directory of the current script (e.g., .../tests/backtesting)
-# 2. Go up two levels to find the project root directory.
-# 3. Construct the path to the 'src' directory.
-# 4. Add the 'src' path to the system's import paths.
 try:
     PROJECT_ROOT = os.path.abspath(
         os.path.join(os.getcwd()))
@@ -25,9 +19,6 @@ except ImportError:
     sys.exit(1)
 
 # --- CONFIGURATION ---
-# Define the path to the data file relative to the
-# dynamically found project root.
-
 CSV_FILE = os.path.join(PROJECT_ROOT, 'data', 'historical_data.csv')
 
 
